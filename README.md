@@ -21,5 +21,5 @@
 ```
 
 #TODO
-~~ - clean the folder and add the submodules ~~
+~~- clean the folder and add the submodules~~
 - add list of plugins and git repository link
