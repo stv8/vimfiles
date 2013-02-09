@@ -40,3 +40,6 @@
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-autoclose"]
+	path = bundle/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose.git
