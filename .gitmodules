@@ -58,9 +58,6 @@
 [submodule "bundle/vim-jquery"]
 	path = bundle/vim-jquery
 	url = https://github.com/itspriddle/vim-jquery.git
-[submodule "bundle/vim-preview"]
-	path = bundle/vim-preview
-	url = https://github.com/greyblake/vim-preview.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
