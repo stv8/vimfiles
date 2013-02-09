@@ -1,0 +1,8 @@
+def index
+  @${1:model_class_name}s = ${2:ModelClassName}.all
+
+  respond_to do |format|
+    format.html # index.html.erb
+    format.xml  { render :xml => @$1s }
+  end
+end${3}
