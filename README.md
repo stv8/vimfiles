@@ -23,3 +23,4 @@
 #TODO
 ~~- clean the folder and add the submodules~~
 - add list of plugins and git repository link
+- add a rake task to automate the symlinks and submodule fetching
