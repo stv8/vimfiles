@@ -40,6 +40,26 @@ Or you can do it manually:
   git submodule update
 ```
 
+#Updating Submodules
+
+You can update each submodule by going to the plugin's folder and pulling from the repo
+```
+  cd ~/.vim/bundle/snipmate
+  git pull origin master
+```
+
+You can also upgrade all the submodules with the command:
+
+```
+  git submodule foreach git pull origin master
+```
+
+Or within the rake file
+
+```
+  rake update_submodules
+```
+
 #Contributing
 
 Find this repo useful?

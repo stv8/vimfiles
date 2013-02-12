@@ -12,4 +12,9 @@ task :init_submodules do
   `git submodule update`
 end
 
+task :update_submodules do
+  `cd ~/.vim`
+  `git submodule foreach git pull origin master`
+end
+
 task :default => :vimfiles
