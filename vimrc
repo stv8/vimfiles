@@ -369,7 +369,7 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-map <C-o> <C-w>o
+"map <C-o> <C-w>o
 
 "key mapping for saving file
 nmap <C-s> :w<CR>
