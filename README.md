@@ -1,5 +1,10 @@
 ##Installation:
 
+Installing vim (OSX, requires homebrew)
+```
+  brew install macvim --override-system-vim
+```
+
 Clone this repository
 
 ```
