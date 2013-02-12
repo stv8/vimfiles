@@ -43,6 +43,7 @@ Or you can do it manually:
 #Contributing
 
 Find this repo useful?
+
 1. Fork it
 2. Add more useful plugins
 3. Commit the changes
