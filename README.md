@@ -9,7 +9,8 @@ Clone this repository
 Now run the rake command to create the symlinks
 
 ```
-  $ rake
+  cd ~/.vim
+  rake
 ```
 
 Or you can create them manually:
@@ -22,7 +23,8 @@ Or you can create them manually:
 Fetch the submodules:
 
 ```
-  $ rake init_submodules
+  cd ~/.vim
+  rake init_submodules
 ```
 
 Or you can do it manually:
