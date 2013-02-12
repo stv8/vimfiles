@@ -52,5 +52,7 @@ Find this repo useful?
 #TODO
 
 ~~- clean the folder and add the submodules~~
+
 ~~- add a rake task to automate the symlinks and submodule fetching~~
+
 - add list of plugins and git repository link
