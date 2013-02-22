@@ -403,14 +403,14 @@ imap {<CR> {}<ESC>i<CR><ESC>O
 nmap wm :NERDTreeToggle<cr>
 let NERDTreeIgnore=['\.swp$']
 
-nnoremap <Esc>A <up>
-nnoremap <Esc>B <down>
-nnoremap <Esc>C <right>
-nnoremap <Esc>D <left>
-inoremap <Esc>A <up>
-inoremap <Esc>B <down>
-inoremap <Esc>C <right>
-inoremap <Esc>D <left>
+"nnoremap <Esc>A <up>
+"nnoremap <Esc>B <down>
+"nnoremap <Esc>C <right>
+"nnoremap <Esc>D <left>
+"inoremap <Esc>A <up>
+"inoremap <Esc>B <down>
+"inoremap <Esc>C <right>
+"inoremap <Esc>D <left>
 
 " ctrl-p
 set runtimepath^=~/.vim/bundle/ctrlp.vim

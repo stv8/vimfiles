@@ -1,6 +1,7 @@
 ##Installation:
 
 Installing vim (OSX, requires homebrew)
+
 ```
   brew install macvim --override-system-vim
 ```
@@ -44,7 +45,8 @@ Or you can do it manually:
 
 #Updating Submodules
 
-You can update each submodule by going to the plugin's folder and pulling from the repo
+You can update each submodule by going to the plugin's folder and pulling from the repo 
+
 ```
   cd ~/.vim/bundle/snipmate
   git pull origin master
@@ -75,6 +77,8 @@ Find this repo useful?
 
 ~~- clean the folder and add the submodules~~
 
+- add list of plugins and git repository link
+
+
 ~~- add a rake task to automate the symlinks and submodule fetching~~
 
-- add list of plugins and git repository link
