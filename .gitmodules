@@ -82,3 +82,6 @@
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
 	url = https://github.com/tsaleh/vim-matchit
+[submodule "bundle/colorizer"]
+	path = bundle/colorizer
+	url = https://github.com/lilydjwg/colorizer
