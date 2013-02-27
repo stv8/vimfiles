@@ -6,7 +6,7 @@ Installing vim (OSX, requires homebrew)
   brew install macvim --override-system-vim
 ```
 
-To use the ack plugin, first you have to install [it](https://github.com/mileszs/ack.vim#installation)
+Installing [ack](https://github.com/mileszs/ack.vim#installation)
 
 Clone this repository
 
@@ -75,10 +75,11 @@ Find this repo useful?
 
 #TODO
 
-~~- clean the folder and add the submodules~~
+- ~~clean the folder and add the submodules~~
+
+- ~~add a rake task to automate the symlinks and submodule fetching~~
 
 - add list of plugins and git repository link
 
 
-~~- add a rake task to automate the symlinks and submodule fetching~~
 
