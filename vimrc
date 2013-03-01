@@ -430,3 +430,8 @@ if(isGui && isMac)
 else
   inoremap <C-Enter> <ESC>o
 endif
+
+runtime macros/matchit.vim
+if has("autocmd")
+  filetype indent plugin on
+endif

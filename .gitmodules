@@ -88,3 +88,9 @@
 [submodule "bundle/ColorX"]
 	path = bundle/ColorX
 	url = https://github.com/vim-scripts/ColorX
+[submodule "bundle/vim-textobj-user"]
+	path = bundle/vim-textobj-user
+	url = git@github.com:kana/vim-textobj-user.git
+[submodule "bundle/vim-textobj-rubyblock"]
+	path = bundle/vim-textobj-rubyblock
+	url = git@github.com:nelstrom/vim-textobj-rubyblock.git
