@@ -4,6 +4,7 @@ desc "create the symlink of the vimrc files"
 task :vimfiles do
   `ln -s ~/.vim/vimrc ~/.vimrc`
   `ln -s ~/.vim/gvimrc ~/.gvimrc`
+  `ln -s ~/.vim/ackrc ~/.ackrc`
 end
 
 task :init_submodules do
