@@ -20,6 +20,9 @@ imap jj <Esc>
 "nmap <silent> <leader>w :!google-chrome % &
 "nnoremap <F5> :silent update<Bar>silent !google-chrome %:p &<CR>
 
+" User the Source Code Pro font
+set anti enc=utf-8 gfn=Source_Code_Pro:h12,Menlo:h14,Monaco:h14
+
 "no swap files
 set noswapfile
 set nobackup
@@ -39,7 +42,7 @@ autocmd BufNewFile, BufRead *.html.erb set filetype=html.eruby.eruby-rails
 autocmd BufNewFile, BufRead *.js.coffee.* set filetype=coffee.eruby.eruby-rails
 
 nmap <C-t> :tabedit %<CR>
-nmap <C-n> :noh<CR>
+nmap <C-b> :noh<CR>
 
 " vimrc de github
 "avoiding annoying CSApprox warning message
