@@ -438,3 +438,7 @@ runtime macros/matchit.vim
 if has("autocmd")
   filetype indent plugin on
 endif
+
+" vim-seek
+let g:seek_enable_jumps = 1
+let g:seek_subst_disable = 1
