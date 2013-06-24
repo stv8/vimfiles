@@ -6,7 +6,7 @@ Installing vim (OSX, requires homebrew)
   brew install macvim --override-system-vim
 ```
 
-Installing [ack](https://github.com/mileszs/ack.vim#installation)
+Installing [ag](https://github.com/ggreer/the_silver_searcher#installationn)
 
 Clone this repository
 
@@ -45,7 +45,7 @@ Or you can do it manually:
 
 #Updating Submodules
 
-You can update each submodule by going to the plugin's folder and pulling from the repo 
+You can update each submodule by going to the plugin's folder and pulling from the repo
 
 ```
   cd ~/.vim/bundle/snipmate
