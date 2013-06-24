@@ -7,6 +7,10 @@ task :vimfiles do
   `ln -s ~/.vim/ackrc ~/.ackrc`
 end
 
+task :tmux do
+  `ln -s ~/.vim/tmux.config ~/.tmux.config`
+end
+
 task :init_submodules do
   `cd ~/.vim`
   `git submodule init`

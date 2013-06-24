@@ -8,6 +8,12 @@ Installing vim (OSX, requires homebrew)
 
 Installing [ag](https://github.com/ggreer/the_silver_searcher#installationn)
 
+Install tmux
+```
+  brew install tmux
+```
+
+
 Clone this repository
 
 ```
