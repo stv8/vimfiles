@@ -16,7 +16,20 @@ snippet sel
 snippet fun
 	${1:function_name} = (${2:argumen}) ->
 		${3: //body...}
-
+# function 2
+snippet ->
+	(${1:args}) ->
+	  ${2:body}
+# if
+snippet if
+	if ${1:conditions}
+	  ${2:code}
+#if else
+snippet ife
+	if ${1:conditions}
+	  ${2:code}
+	else
+	  ${3:code}
 # Asignation if
 snippet =if
 	${1:variable} = ${2:valor} if ${3:condition}

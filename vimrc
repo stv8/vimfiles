@@ -15,7 +15,7 @@ set autoindent
 "clipboard
 set clipboard=unnamed
 " jj para salir de insert mode
-imap jj <Esc>
+imap jk <Esc>
 " \w para abrir html en chrome
 "nmap <silent> <leader>w :!google-chrome % &
 "nnoremap <F5> :silent update<Bar>silent !google-chrome %:p &<CR>
