@@ -1,3 +1,4 @@
+let mapleader = ","
 "load pathogen managed plugins
 call pathogen#infect()
 "call pathogen#runtime_append_all_bundles()
@@ -12,8 +13,14 @@ syntax on
 set autoindent
 "color column
 "set colorcolumn=80
+
 "clipboard
-set clipboard=unnamed
+"set clipboard=unnamed
+"tmux clipboard
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
+
 " jj para salir de insert mode
 imap jk <Esc>
 " \w para abrir html en chrome
@@ -50,7 +57,6 @@ let g:CSApprox_verbose_level = 0
 
 "necessary on some Linux distros for pathogen to properly load bundles
 filetype on
-filetype off
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -418,3 +424,4 @@ let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['javascript'] = 'javascript,javascript-jquery'
 let g:snipMate.scope_aliases['ruby'] = 'ruby,ruby-rails,ruby-rspec,ruby-shoulda,ruby-factorygirl,ruby-machinist'
 colorscheme xoria256-pluk " railscasts
+
