@@ -424,4 +424,5 @@ let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['javascript'] = 'javascript,javascript-jquery'
 let g:snipMate.scope_aliases['ruby'] = 'ruby,ruby-rails,ruby-rspec,ruby-shoulda,ruby-factorygirl,ruby-machinist'
 "colorscheme xoria256-pluk " railscasts
-colorscheme lucius
+"colorscheme lucius
+colorscheme putty
