@@ -36,7 +36,7 @@ set nobackup
 set nowb
 
 "zen coding leader
-let g:user_zen_leader_key = '<leader>'
+let g:user_emmet_leader_key = '<leader>'
 
 "ruby string interpolation
 vmap <leader># c#{<C-R>"}<esc>
@@ -358,7 +358,7 @@ nmap <S-Tab> gT
 
 
 "Enabling Zencoding
-let g:user_zen_settings = {
+let g:user_emmet_settings = {
   \  'php' : {
   \    'extends' : 'html',
   \    'filters' : 'c',
