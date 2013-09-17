@@ -28,7 +28,7 @@ imap jk <Esc>
 "nnoremap <F5> :silent update<Bar>silent !google-chrome %:p &<CR>
 
 " User the Source Code Pro font
-set anti enc=utf-8 gfn=Source_Code_Pro:h12,Menlo:h14,Monaco:h14
+set anti enc=utf-8 gfn=Source_Code_Pro_for_Powerline:h12,Menlo:h14,Monaco:h14
 
 "no swap files
 set noswapfile
@@ -397,7 +397,7 @@ let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " Linux/MacOSX
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|log)$'
 
 " command enter
 "
@@ -405,8 +405,6 @@ let isMac  = has("mac")
 let isGui  = has("gui_running")
 if(isGui && isMac)
   inoremap <D-Enter> <ESC>o
-else
-  inoremap <C-Enter> <ESC>o
 endif
 
 runtime macros/matchit.vim
@@ -426,3 +424,17 @@ let g:snipMate.scope_aliases['ruby'] = 'ruby,ruby-rails,ruby-rspec,ruby-shoulda,
 "colorscheme xoria256-pluk " railscasts
 "colorscheme lucius
 colorscheme putty
+
+" Rspec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "!bundle exec rspec --format documentation {spec}"
+
+"activate powerline
+"https://github.com/Lokaltog/powerline/issues/39
+"https://github.com/Lokaltog/powerline/issues/39#issuecomment-13035045
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup

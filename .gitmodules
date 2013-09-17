@@ -109,3 +109,9 @@
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim
+[submodule "bundle/vim-rspec"]
+	path = bundle/vim-rspec
+	url = git@github.com:thoughtbot/vim-rspec.git
+[submodule "bundle/handlebars"]
+	path = bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
