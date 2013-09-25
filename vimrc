@@ -405,6 +405,8 @@ let isMac  = has("mac")
 let isGui  = has("gui_running")
 if(isGui && isMac)
   inoremap <D-Enter> <ESC>o
+else
+  inoremap ✠ <ESC>o
 endif
 
 runtime macros/matchit.vim
@@ -438,3 +440,28 @@ let g:rspec_command = "!bundle exec rspec --format documentation {spec}"
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+
+" A Vim function i use to easily toggle colorcolumn on and off.
+
+" If colorcolumn is off and textwidth is set the use colorcolumn=+1.
+" If colorcolumn is off and textwidth is not set then use colorcolumn=80.
+" If colorcolumn is on then turn it off.
+
+" I use: nmap <Leader>cc :call ColorColumn()<CR>
+
+function! ColorColumn()
+  if empty(&colorcolumn)
+    if empty(&textwidth)
+      echo "colorcolumn=80"
+      setlocal colorcolumn=80
+    else
+      echo "colorcolumn=+1 (" . (&textwidth + 1) . ")"
+      setlocal colorcolumn=+1
+    endif
+  else
+    echo "colorcolumn="
+    setlocal colorcolumn=
+  endif
+endfunction
+
+nmap <Leader>co :call ColorColumn()<CR>

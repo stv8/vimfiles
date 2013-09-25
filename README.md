@@ -70,6 +70,10 @@ Or within the rake file
   rake update_submodules
 ```
 
+##Control-enter hack
+
+I have an insert mode mapping for MacVim that basically escapes insert mode and presses o, so I can go to a new line while being in insert mode. Unfortunately if I press this key combination in Terminal Vim, it makes my terminal enter fullscreen mode, I found a hack on [Stack Overflow](http://stackoverflow.com/a/12117076) to map Control-Enter to this behavior.
+
 #Contributing
 
 Find this repo useful?
