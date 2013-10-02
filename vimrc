@@ -465,3 +465,6 @@ function! ColorColumn()
 endfunction
 
 nmap <Leader>co :call ColorColumn()<CR>
+
+"open in sublime
+command Subl execute "!subl %"

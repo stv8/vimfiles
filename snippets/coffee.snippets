@@ -95,7 +95,7 @@ snippet ##
 ##
 snippet desc
 	describe '${1:Model or When ...}', ->
-	${2}
+		${2}
 snippet it
 	it '${1:Should ...}', ->
 		${2}
@@ -115,6 +115,8 @@ snippet expfalse
 	expect(${1:predicate}).toBeFalsy()
 snippet expcon
 	expect(${1:predicate}).toContain ${2:value}
+snippet expattr
+	expect(${1:predicate}).toHaveAttr ${2:value}${3}
 snippet befe
 	beforeEach ->
 		${1}
