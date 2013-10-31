@@ -330,7 +330,7 @@ endfunction
 
 " Strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
+    " Preparation save last search, and cursor position.
     let _s=@/
     let l = line(".")
     let c = col(".")
@@ -426,13 +426,6 @@ let g:snipMate.scope_aliases['ruby'] = 'ruby,ruby-rails,ruby-rspec,ruby-shoulda,
 "colorscheme xoria256-pluk " railscasts
 "colorscheme lucius
 colorscheme putty
-
-" Rspec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-let g:rspec_command = "!bundle exec rspec --format documentation {spec}"
 
 "activate powerline
 "https://github.com/Lokaltog/powerline/issues/39
