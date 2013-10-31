@@ -461,6 +461,3 @@ nmap <Leader>co :call ColorColumn()<CR>
 
 "open in sublime
 command Subl execute "!subl %"
-
-" vim move
-let g:move_key_modifier = 'C'
