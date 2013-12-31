@@ -461,3 +461,6 @@ nmap <Leader>co :call ColorColumn()<CR>
 
 "open in sublime
 command Subl execute "!subl %"
+
+"mustache abbreviations
+let g:mustache_abbreviations = 1
