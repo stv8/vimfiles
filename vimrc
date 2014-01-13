@@ -464,3 +464,6 @@ command Subl execute "!subl %"
 
 "mustache abbreviations
 let g:mustache_abbreviations = 1
+
+" C-e to go to the end of line in insert mode
+inoremap <C-e> <C-o>A
