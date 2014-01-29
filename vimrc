@@ -1,8 +1,4 @@
 let mapleader = ","
-"load pathogen managed plugins
-call pathogen#infect()
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
 
 " Line numbers
 set number
