@@ -17,11 +17,8 @@ if $TMUX == ''
   set clipboard+=unnamed
 endif
 
-" jj para salir de insert mode
+" jk para salir de insert mode
 imap jk <Esc>
-" \w para abrir html en chrome
-"nmap <silent> <leader>w :!google-chrome % &
-"nnoremap <F5> :silent update<Bar>silent !google-chrome %:p &<CR>
 
 " User the Source Code Pro font
 set anti enc=utf-8 gfn=Source_Code_Pro_for_Powerline:h12,Menlo:h14,Monaco:h14
@@ -33,11 +30,6 @@ set nowb
 
 "zen coding leader
 let g:user_emmet_leader_key = '<leader>'
-
-"ruby string interpolation
-vmap <leader># c#{<C-R>"}<esc>
-vmap <leader>$ c$("<C-R>"")<esc>
-vmap <leader>@ c$(<C-R>")<esc>
 
 " filetypes
 autocmd BufNewFile, BufRead *.html.erb set filetype=html.eruby.eruby-rails
@@ -52,7 +44,7 @@ nmap <C-b> :noh<CR>
 let g:CSApprox_verbose_level = 0
 
 "necessary on some Linux distros for pathogen to properly load bundles
-filetype on
+filetype off
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -463,3 +455,54 @@ let g:mustache_abbreviations = 1
 
 " C-e to go to the end of line in insert mode
 inoremap <C-e> <C-o>A
+
+"""""""""""""""""""""""""""""""""""""
+"       VUNDLE CONFIGURATION
+"""""""""""""""""""""""""""""""""""""
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" PLUGINS
+Bundle 'vim-scripts/CSApprox'
+Bundle 'vim-scripts/ColorX'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'rking/ag.vim'
+Bundle 'lilydjwg/colorizer'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/emmet-vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/syntastic'
+Bundle 'godlygeek/tabular'
+Bundle 'tomtom/tlib_vim'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'Townk/vim-autoclose'
+Bundle 'asux/vim-capybara'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'henrik/vim-indexed-search'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'itspriddle/vim-jquery'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'fundon/vim-mou'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'tpope/vim-rails'
+Bundle 'rking/vim-ruby-refactoring'
+Bundle 'justinmk/vim-sneak'
+Bundle 'garbas/vim-snipmate'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'kana/vim-textobj-user'
+
+filetype plugin on     " required!
