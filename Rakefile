@@ -11,15 +11,14 @@ task :tmux do
   `ln -s ~/.vim/tmux.config ~/.tmux.config`
 end
 
-task :init_submodules do
+task :install_plugins do
   `cd ~/.vim`
-  `git submodule init`
-  `git submodule update`
+  `vim +BundleInstall +qall`
 end
 
-task :update_submodules do
+task :update_plugins do
   `cd ~/.vim`
-  `git submodule foreach git pull origin master`
+  `vim +BundleInstall! +qall`
 end
 
 task :default => :vimfiles

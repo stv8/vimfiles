@@ -6,9 +6,11 @@ Installing vim (OSX, requires homebrew)
   brew install macvim --override-system-vim
 ```
 
-Installing [ag](https://github.com/ggreer/the_silver_searcher#installationn)
+Install [ag](https://github.com/ggreer/the_silver_searcher#installationn)
+
 
 Install tmux
+
 ```
   brew install tmux
 ```
@@ -20,55 +22,44 @@ Clone this repository
  git clone git://github.com/rkrdo/vimfiles.git ~/.vim
 
 ```
-Now run the rake command to create the symlinks
+Now run the rake command to create the symlinks (you need to have Ruby installed)
 
 ```
   cd ~/.vim
   rake
 ```
 
-Or you can create them manually:
+Or if you don't have Ruby in your system:
 
 ```
   ln -s ~/.vim/vimrc ~/.vimrc
   ln -s ~/.vim/gvimrc ~/.gvimrc
 ```
 
-Fetch the submodules:
+Fetch the plugins:
 
 ```
   cd ~/.vim
-  rake init_submodules
+  rake install_plugins
 ```
 
 Or you can do it manually:
 
-```
-  cd ~/.vim
-  git submodule init
-  git submodule update
-```
+Go to `cd ~/.vim`, launch `vim` and run `:BundleInstall`
 
-#Updating Submodules
+#Updating Plugins
 
-You can update each submodule by going to the plugin's folder and pulling from the repo
+
+You can update the plugins running (again, a Ruby installation is needed)
 
 ```
-  cd ~/.vim/bundle/snipmate
-  git pull origin master
+  rake update_plugins
 ```
 
-You can also upgrade all the submodules with the command:
+Or manually:
 
-```
-  git submodule foreach git pull origin master
-```
+Go to `cd ~/.vim`, launch `vim` and run `:BundleInstall!` (notice the bang ! at the end)
 
-Or within the rake file
-
-```
-  rake update_submodules
-```
 
 ##Control-enter hack
 
@@ -88,6 +79,8 @@ Find this repo useful?
 - ~~clean the folder and add the submodules~~
 
 - ~~add a rake task to automate the symlinks and submodule fetching~~
+
+- ~~changed from Pathogen to Vundle~~
 
 - add list of plugins and git repository link
 
