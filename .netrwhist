@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/ricardo/rails/felicidades'
-let g:netrw_dirhist_2='/Users/ricardo/.vim/bundle/vim-snipmate'
-let g:netrw_dirhist_3='/Users/ricardo/.vim/bundle/vim-snipmate/plugin'
-let g:netrw_dirhist_4='/Users/ricardo/.vim/.git'
-let g:netrw_dirhist_5='/Users/ricardo/.rvm/gems/ruby-1.9.3-p327/bundler/gems/spree-31f3007c8433'
