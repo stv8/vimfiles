@@ -82,7 +82,7 @@ Find this repo useful?
 
 - ~~changed from Pathogen to Vundle~~
 
-- add list of plugins and git repository link
+- ~~add list of plugins and git repository link~~
 
 
 
