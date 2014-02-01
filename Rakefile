@@ -13,12 +13,12 @@ end
 
 task :install_plugins do
   `cd ~/.vim`
-  `vim +BundleInstall +qall`
+  exec 'vim +BundleInstall +qall'
 end
 
 task :update_plugins do
   `cd ~/.vim`
-  `vim +BundleInstall! +qall`
+  exec 'vim +BundleInstall! +qall'
 end
 
 task :default => :vimfiles
