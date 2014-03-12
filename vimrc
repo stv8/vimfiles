@@ -35,6 +35,7 @@ let g:user_emmet_leader_key = '<leader>'
 autocmd BufNewFile, BufRead *.html.erb set filetype=html.eruby.eruby-rails
 "autocmd BufNewFile, BufRead *.js.coffee set filetype=coffee
 autocmd BufNewFile, BufRead *.js.coffee.* set filetype=coffee.eruby.eruby-rails
+au  BufNewFile,BufRead *.mustache,*.handlebars,*.hbs,*.hogan,*.hulk,*.hjs set filetype=mustache syntax=mustache | runtime! ftplugin/mustache.vim ftplugin/mustache*.vim ftplugin/mustache/*.vim
 
 nmap <C-t> :tabedit %<CR>
 nmap <C-b> :noh<CR>
