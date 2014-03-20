@@ -496,7 +496,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'henrik/vim-indexed-search'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'itspriddle/vim-jquery'
-Bundle 'tsaleh/vim-matchit'
+Bundle 'matchit.zip'
 Bundle 'fundon/vim-mou'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-rails'
@@ -505,5 +505,14 @@ Bundle 'justinmk/vim-sneak'
 Bundle 'garbas/vim-snipmate'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
+"Bundle 'hwartig/vim-seeing-is-believing'
 
 filetype plugin on     " required!
+
+"nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+"xmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+"imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+
+"nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+"xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+"imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
