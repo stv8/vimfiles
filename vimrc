@@ -516,3 +516,6 @@ filetype plugin on     " required!
 "nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 "xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 "imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+
+" Fix for tmux background
+set t_ut=
