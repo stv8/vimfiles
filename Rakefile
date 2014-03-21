@@ -8,7 +8,7 @@ task :vimfiles do
 end
 
 task :tmux do
-  `ln -s ~/.vim/tmux.config ~/.tmux.config`
+  `ln -s ~/.vim/tmux.config ~/.tmux.conf`
 end
 
 task :install_plugins do
