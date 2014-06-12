@@ -516,3 +516,8 @@ filetype plugin on     " required!
 "nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 "xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
 "imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
