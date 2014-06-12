@@ -419,9 +419,9 @@ colorscheme putty
 "activate powerline
 "https://github.com/Lokaltog/powerline/issues/39
 "https://github.com/Lokaltog/powerline/issues/39#issuecomment-13035045
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
 
 " A Vim function i use to easily toggle colorcolumn on and off.
 
