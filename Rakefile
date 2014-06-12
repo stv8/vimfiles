@@ -2,13 +2,14 @@ require 'rake'
 desc "create the symlink of the vimrc files"
 
 task :vimfiles do
+  `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
   `ln -s ~/.vim/vimrc ~/.vimrc`
   `ln -s ~/.vim/gvimrc ~/.gvimrc`
   `ln -s ~/.vim/ackrc ~/.ackrc`
 end
 
 task :tmux do
-  `ln -s ~/.vim/tmux.config ~/.tmux.config`
+  `ln -s ~/.vim/tmux.conf ~/.tmux.conf`
 end
 
 task :install_plugins do
