@@ -521,3 +521,6 @@ filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
+
+" Fix for tmux background
+set t_ut=
